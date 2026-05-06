@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "GeekBud",
+    "slug": "geekbud",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a1f05"
+    },
+    "ios": {
+      "supportsTabletMode": false,
+      "bundleIdentifier": "com.geekbud.app"
+    },
+    "android": {
+      "package": "com.geekbud.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a1f05"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow GeekBud to access your photos",
+          "cameraPermission": "Allow GeekBud to use your camera"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow GeekBud to access your location for nearby spots"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "geekbud-project-id"
+      }
+    },
+    "scheme": "geekbud"
+  }
+}
